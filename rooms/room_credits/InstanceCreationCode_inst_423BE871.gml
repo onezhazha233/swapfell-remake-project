@@ -1,1 +1,1 @@
-text = "{gui true}{instant true}{shadow false}{font 1}{scale 2}{color_rgb 106 96 140}Credits&Origin game McatR&Engine TML&Program Zhazha&Texts Ouhuang&Dissension Vex&Hypermaniacs Sayven's cover"
+text = "{gui true}{instant true}{shadow false}{font 1}{scale 2}{color_rgb 106 96 140}Credits&Origin game McatR&Engine TML&Program Zhazha&Texts Ouhuang&Translation Yizhe&Dissension Vex&Hypermaniacs Sayven's cover&&&Press X to back."
