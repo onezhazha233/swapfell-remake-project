@@ -1,0 +1,81 @@
+///@desc Name Check
+var text="";
+var valid=true;
+switch(string_lower(_naming_name)){
+	default:
+		text="Is this name correct?";
+		break;
+	case "aaaaaa":
+		text="Not very creative, still.";
+		break;
+	case "zzzzzz":
+		text="Don't you have anything better to do?";
+		break;
+	case "alphys":
+		text="Go screw yourself."
+		valid=false;
+		break;
+	case "alphy":
+		text="Well, well.";
+		break;
+	case "asgore":
+		text="Get your name, please.";
+		valid=false;
+		break;
+	case "toriel":
+		text="I won't allow.";
+		valid=false;
+		break;
+	case "asriel":
+		text="NO!";
+		valid=false;
+		break;
+	case "flowey":
+		text="It's not improper.";
+		valid=false;
+		break;
+	case "sans":
+		text="WHAT ARE YOU THINKING OF?";
+		valid=false;
+		break;
+	case "san":
+		text="eh...";
+		break;
+	case "papyru":
+		text="maybe ok.";
+		break;
+	case "undyne":
+		text="You mustn't.";
+		valid=false;
+		break;
+	case "ntt":
+	case "napst":
+	case "nps":
+		text="I'll allow it.";
+		break;
+	case "chara":
+		text="Even then, your journey won't be difficult.";
+		break;
+	case "frisk":
+		text="The true name.";
+		break;
+	case "noheal":
+	case "noitem":
+		text="Good luck.";
+		break;
+	case "nohit":
+		text="I'm looking forward to the video.";
+		break;
+	case "infhp":
+		text="Easy game.";
+		break;
+	case "fuck":
+		text="fuck.";
+		break;
+	case "fucku":
+		text="fucku.";
+		break;
+}
+
+_confirm_title=text;
+_confirm_valid=valid;

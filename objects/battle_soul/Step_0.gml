@@ -1,0 +1,48 @@
+var STATE=Battle_GetState();
+if(STATE==BATTLE_STATE.TURN_PREPARATION||STATE==BATTLE_STATE.IN_TURN){
+	if(follow_board){
+		x+=battle_board.x-battle_board.xprevious;
+		y+=battle_board.y-battle_board.yprevious;
+	}
+	if(restrict_inside_board){
+		if(x<battle_board._inst_frame_left.x+battle_board._inst_frame_left.sprite_width+sprite_width/2){
+			x=battle_board._inst_frame_left.x+battle_board._inst_frame_left.sprite_width+sprite_width/2;
+		}
+		if(x>battle_board._inst_frame_right.x-sprite_width/2){
+			x=battle_board._inst_frame_right.x-sprite_width/2;
+		}
+		if(y<battle_board._inst_frame_up.y+battle_board._inst_frame_up.sprite_height+sprite_height/2){
+			y=battle_board._inst_frame_up.y+battle_board._inst_frame_up.sprite_height+sprite_height/2;
+		}
+		if(y>battle_board._inst_frame_down.y-sprite_height/2){
+			y=battle_board._inst_frame_down.y-sprite_height/2;
+		}
+	}
+	
+	while(position_meeting(x+sprite_width/2,y,block)){
+		x-=0.01;
+	}
+	while(position_meeting(x-sprite_width/2,y,block)){
+		x+=0.01;
+	}
+	while(position_meeting(x,y+sprite_height/2,block)){
+		y-=0.01;
+	}
+	while(position_meeting(x,y-sprite_height/2,block)){
+		y+=0.01;
+	}
+}
+
+//无敌时间闪烁
+if(_inv>0){
+	_inv-=1;
+	if(image_speed==0){
+		image_speed=1/2;
+		image_index=1;
+	}
+}else{
+	if(image_speed!=0){
+		image_speed=0;
+		image_index=0;
+	}
+}
