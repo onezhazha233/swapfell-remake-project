@@ -182,7 +182,6 @@ if(start = 1){
 				audio_play_sound(snd_vaporize,0,0);
 				Player_SetLv(20);
 				Player_SetHpMax(99);
-				audio_play_sound(snd_level_up,0,0);
 				alarm[5] = 200;
 				aa = 1;
 			}
