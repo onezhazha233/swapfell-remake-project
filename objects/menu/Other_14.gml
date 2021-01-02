@@ -75,6 +75,25 @@ switch(string_lower(_naming_name)){
 	case "fucku":
 		text="fucku.";
 		break;
+	case "gaster":
+		text="useless."
+		break;
+	case "rman":
+	case "rwoman":
+		text="?"
+		game_end();
+		break;
+	case "zhazha":
+		text="The developer."
+		break;
+	case "mcatr":
+		text="The true developer."
+		break;
+	case "mdns":
+	case "murder":
+	case "moroz":
+		text="The god."
+		break;
 }
 
 _confirm_title=text;
