@@ -177,7 +177,7 @@ if(start = 1){
 		battle_enemy_papyrus.action = 0;
 	}
 	if(time = 1980){
-		battle_bonecone.blue = 1;
+		with(battle_bonecone)blue = choose(0,0,1);
 		audio_play_sound(snd_ding,0,0);
 	}
 }

@@ -14,6 +14,7 @@ _inst_room=noone;
 _inst_continue=noone;
 _inst_reset=noone;
 _inst_settings=noone;
+_inst_credits=noone;
 _inst_naming_title=noone;
 _inst_naming_letters=noone;
 _inst_naming_quit=noone;
@@ -43,7 +44,7 @@ _confirm_name_update=true;
 _naming_name="";
 
 _change_inst=noone;
-_change_color=c_white;
+_change_color=make_color_rgb(106,96,140);
 _change_id=-1;
 
 event_user(0);

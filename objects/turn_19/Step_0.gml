@@ -149,14 +149,14 @@ if(start = 1){
 		battle_enemy_papyrus.hurt = 2;
 		alarm[4] = 1;
 		with(battle_enemy_papyrus){
-			var dmg=irandom_range(1500,2000);
+			var dmg=irandom_range(2000,3000);
 			hp-=dmg;
 			if(hp<0){
 				hp=0;
 			}
 			a = instance_create_depth(310,120,0,battle_damage);
 			a.damage = dmg;
-			a.bar_hp_max = hp;
+			a.bar_hp_max = 2000;
 			a.bar_hp_original = hp + dmg;
 			a.bar_hp_target = 0;
 		}

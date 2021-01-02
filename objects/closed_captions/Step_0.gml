@@ -64,8 +64,8 @@ if(_up_previous!=height){
 	if(height<_up_previous){
 		delay=10;
 	}
-	Anim_Stop(self,"_up");
-	Anim_New(self,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
+	Anim_Stop(id,"_up");
+	Anim_New(id,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
 	_up_previous=height;
 }
 
@@ -114,10 +114,10 @@ repeat(ds_list_size(_list_destroy_inst)){
 
 if(!_showed&&!ds_list_empty(_list_inst)){
 	_showed=true;
-	Anim_Stop(self,"_alpha");
-	Anim_New(self,"_alpha",0,0,0,1,10);
+	Anim_Stop(id,"_alpha");
+	Anim_New(id,"_alpha",0,0,0,1,10);
 }else if(_showed&&ds_list_empty(_list_inst)){
 	_showed=false;
-	Anim_Stop(self,"_alpha");
-	Anim_New(self,"_alpha",0,0,1,-1,10,5);
+	Anim_Stop(id,"_alpha");
+	Anim_New(id,"_alpha",0,0,1,-1,10,5);
 }

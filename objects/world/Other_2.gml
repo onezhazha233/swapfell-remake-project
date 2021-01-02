@@ -51,4 +51,8 @@ Console_OutputLine("Game GUID: "+GAME_GUID);
 
 randomize()
 
+global.hardd = 0
+global.cooll = 0
+global.hpp = 0
+
 room_goto_next();

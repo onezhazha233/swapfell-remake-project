@@ -1,8 +1,12 @@
 {
-    "id": "83f3bcdd-8470-44e5-abf7-fa4862a58d9a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Macro_Bone",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Macro",
+    "path": "folders/Scripts/Macro.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Macro_Bone",
+  "tags": [],
+  "resourceType": "GMScript",
 }

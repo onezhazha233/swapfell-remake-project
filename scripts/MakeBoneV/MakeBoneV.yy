@@ -1,8 +1,12 @@
 {
-    "id": "8adfab2b-0bbb-4591-8304-dfecaae4d61e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "MakeBoneV",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Bone",
+    "path": "folders/Scripts/Battle/Bone.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "MakeBoneV",
+  "tags": [],
+  "resourceType": "GMScript",
 }

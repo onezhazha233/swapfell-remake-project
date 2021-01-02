@@ -579,4 +579,11 @@ switch(cmd[|0]){
 	case "eye_close":
 		battle_enemy_papyrus.purple_eye = 0;
 		break;
+		
+	case "color_rgb4":
+		_color_text[0]=make_color_rgb(ds_list_find_value(cmd,1),ds_list_find_value(cmd,2),ds_list_find_value(cmd,3));
+		_color_text[1]=make_color_rgb(ds_list_find_value(cmd,4),ds_list_find_value(cmd,5),ds_list_find_value(cmd,6));
+		_color_text[2]=make_color_rgb(ds_list_find_value(cmd,7),ds_list_find_value(cmd,8),ds_list_find_value(cmd,9));
+		_color_text[3]=make_color_rgb(ds_list_find_value(cmd,10),ds_list_find_value(cmd,11),ds_list_find_value(cmd,12));
+		break;
 }

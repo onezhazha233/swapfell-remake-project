@@ -1,8 +1,12 @@
 {
-    "id": "6a7b7aae-5725-43d8-8c86-e8544010ae71",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "MakeBoneWallBottom",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Bone",
+    "path": "folders/Scripts/Battle/Bone.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "MakeBoneWallBottom",
+  "tags": [],
+  "resourceType": "GMScript",
 }

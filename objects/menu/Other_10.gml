@@ -4,8 +4,12 @@ if(_menu==0){
 	if(_mode==0){
 		_inst_instruction=instance_create_depth(170,40,0,text_typer);
 		_inst_instruction.text=_prefix+"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 3}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[F4] - Fullscreen&When HP is 0, you lose.";
-		_inst_begin=instance_create_depth(170,344,0,text_typer);
+		_inst_begin=instance_create_depth(170,304,0,text_typer);
 		_inst_begin.text=_prefix+"Begin Game";
+		_inst_settings=instance_create_depth(170,344,0,text_typer);
+		_inst_settings.text=_prefix+"Settings";
+		_inst_credits=instance_create_depth(170,384,0,text_typer);
+		_inst_credits.text=_prefix+"Credits";
 		with(text_typer){
 			event_user(15);
 		}
@@ -33,7 +37,6 @@ if(_menu==0){
 		_inst_settings.text=_prefix+Lang_GetString("menu.settings");
 		_inst_settings.override_color_text_enabled=true;
 		event_user(2);
-		
 	}
 }else{
 	if(instance_exists(_inst_instruction)){
@@ -44,6 +47,9 @@ if(_menu==0){
 	}
 	if(instance_exists(_inst_settings)){
 		instance_destroy(_inst_settings);
+	}
+	if(instance_exists(_inst_credits)){
+		instance_destroy(_inst_credits);
 	}
 	if(instance_exists(_inst_name)){
 		instance_destroy(_inst_name);
@@ -108,9 +114,9 @@ if(_menu==2){
 	_confirm_name_x=280;
 	_confirm_name_y=110;
 	_confirm_name_scale=2;
-	Anim_New(self,"_confirm_name_x",0,0,280,-80,270);
-	Anim_New(self,"_confirm_name_y",0,0,110,120,270);
-	Anim_New(self,"_confirm_name_scale",0,0,2,5,270);
+	Anim_New(id,"_confirm_name_x",0,0,280,-80,270);
+	Anim_New(id,"_confirm_name_y",0,0,110,120,270);
+	Anim_New(id,"_confirm_name_scale",0,0,2,5,270);
 	_choice_confirm=0;
 	with(text_typer){
 		event_user(15);

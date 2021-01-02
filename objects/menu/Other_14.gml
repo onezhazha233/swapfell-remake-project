@@ -54,20 +54,10 @@ switch(string_lower(_naming_name)){
 		text="I'll allow it.";
 		break;
 	case "chara":
-		text="Even then, your journey won't be difficult.";
+		text="Even then, your journey won't be difficult.&(maybe...?)";
 		break;
 	case "frisk":
 		text="The true name.";
-		break;
-	case "noheal":
-	case "noitem":
-		text="Good luck.";
-		break;
-	case "nohit":
-		text="I'm looking forward to the video.";
-		break;
-	case "infhp":
-		text="Easy game.";
 		break;
 	case "fuck":
 		text="fuck.";
@@ -91,8 +81,13 @@ switch(string_lower(_naming_name)){
 		break;
 	case "mdns":
 	case "murder":
+		text="The babybone."
+		break;
 	case "moroz":
-		text="The god."
+		text="The god.";
+		break;
+	case "bpants":
+		text="...i have nothing to say."
 		break;
 }
 

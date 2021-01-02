@@ -1,10 +1,32 @@
 if(fader.alpha = 0){
 	if(_menu==0){
 		if(_mode==0){
-			if(Input_CheckPressed(INPUT.CONFIRM)){
+			if(Input_CheckPressed(INPUT.DOWN)){
+				if(_choice==0){
+					_choice=1;
+					event_user(2);
+				}else if(_choice==1){
+					_choice=2;
+					event_user(2);
+				}
+			}else if(Input_CheckPressed(INPUT.UP)){
+				if(_choice==2){
+					_choice=1;
+					event_user(2);
+				}else if(_choice==1){
+					_choice=0;
+					event_user(2);
+				}
+			}else if(Input_CheckPressed(INPUT.CONFIRM)){
 				if(_choice==0){
 					_menu=1;
 					event_user(0);
+				}
+				if(_choice==1){
+					room_goto(room_settings);
+				}
+				if(_choice==2){
+					room_goto(room_credits);
 				}
 			}
 		}else{
@@ -221,7 +243,4 @@ if(keyboard_check_pressed(ord("H"))&&kk = 0){
 	if(kk = 0){
 		kk = 1;
 	}
-}
-if(keyboard_check_pressed(ord("C"))){
-	room_goto(room_credits);
 }

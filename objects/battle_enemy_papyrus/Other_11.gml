@@ -5,20 +5,19 @@ Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION)
 
 battle_board.color_frame = make_color_rgb(106,96,140)
 
-switch(string_lower(Player_GetName())){
-	case "noheal":
-	case "noitem":
+switch(global.hpp){
+	case 1:
 		repeat(8)Item_Remove(0);
 		Battle_SetEnemyActionNumber(_enemy_slot,1);
 		break;
-	case "nohit":
+	case 2:
 		Player_SetHp(1);
 		Player_SetHpMax(1);
 		repeat(8)Item_Remove(0);
 		repeat(8)Item_Add(item_no);
 		Battle_SetEnemyActionNumber(_enemy_slot,1);
 		break;
-	case "infhp":
+	case 3:
 		INF_hp = 1;
 		break;
 }
