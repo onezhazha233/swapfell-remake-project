@@ -10,6 +10,13 @@ if(start = 1){
 		MakeBoneBottom(557,40,-5,0,0,0,1,0);
 		MakeBoneBottom(571,27,-5,0,0,0,1,0);
 		MakeBoneBottom(585,10,-5,0,0,0,1,0);
+		MakeBoneTop(140,10,5,0,0,0,1,0);
+		MakeBoneTop(126,27,5,0,0,0,1,0);
+		MakeBoneTop(112,40,5,0,0,0,1,0);
+		MakeBoneTop(98,40,5,0,0,0,1,0);
+		MakeBoneTop(84,40,5,0,0,0,1,0);
+		MakeBoneTop(70,27,5,0,0,0,1,0);
+		MakeBoneTop(56,10,5,0,0,0,1,0);
 	}
 	if(time = 75){
 		MakeBoneBottom(140,10,5,0,0,0,1,0);
@@ -19,6 +26,13 @@ if(start = 1){
 		MakeBoneBottom(84,40,5,0,0,0,1,0);
 		MakeBoneBottom(70,27,5,0,0,0,1,0);
 		MakeBoneBottom(56,10,5,0,0,0,1,0);
+		MakeBoneTop(501,10,-5,0,0,0,1,0);
+		MakeBoneTop(515,27,-5,0,0,0,1,0);
+		MakeBoneTop(529,40,-5,0,0,0,1,0);
+		MakeBoneTop(543,40,-5,0,0,0,1,0);
+		MakeBoneTop(557,40,-5,0,0,0,1,0);
+		MakeBoneTop(571,27,-5,0,0,0,1,0);
+		MakeBoneTop(585,10,-5,0,0,0,1,0);
 	}
 	if(time = 157){
 		MakeBoneBottom(501,10,-8,0,0,0,1,0);
@@ -54,11 +68,19 @@ if(start = 1){
 	if(time = 175){
 		alarm[0] = 38;
 	}
+	if(time = 205){
+		Battle_SlamUp();
+	}
 	if(time = 410){
 		alarm[0] = -1;
 	}
+	if(time = 420){
+		Battle_SlamDown();
+		battle_bone_pap.color = 2;
+	}
 	if(time = 437){
 		MakeBoneBottom(501,34,-3,0,0,0,1,0);
+		battle_enemy_papyrus.action = 0;
 	}
 	if(time = 461){
 		MakeBoneBottom(507,7,-3,1,0,0,1,0);

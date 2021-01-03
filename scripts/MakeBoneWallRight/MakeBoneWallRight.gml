@@ -26,7 +26,7 @@ function MakeBoneWallRight() {
 	}
 	a = instance_create_depth(0,0,0,bone_box);
 	a.duration = PAUSE;
-	a.x1 = battle_board.x+battle_board.right-2;
+	a.x1 = battle_board.x+battle_board.right-1;
 	a.y1 = battle_board.y-battle_board.up+1;
 	a.x2 = battle_board.x+battle_board.right-LENGTH;
 	a.y2 = battle_board.y+battle_board.down-2;
