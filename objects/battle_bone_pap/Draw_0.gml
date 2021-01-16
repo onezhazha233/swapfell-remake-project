@@ -9,6 +9,9 @@ if(color = BONE.BLUE){
 if(color = BONE.ORANGE){
 	blend = make_color_rgb(248,148,29);
 }
+if(color = BONE.DARKBLUE){
+	blend = c_blue;
+}
 
 if(out = 0){
 	depth = DEPTH_BATTLE.BULLET;

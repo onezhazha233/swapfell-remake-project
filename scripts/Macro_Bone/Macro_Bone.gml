@@ -5,7 +5,6 @@ function Macro_Bone() {
 		WHITE = 0,
 		BLUE = 1,
 		ORANGE = 2,
+		DARKBLUE = 3,
 	}
-
-
 }
