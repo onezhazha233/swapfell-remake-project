@@ -5,3 +5,5 @@
 event_inherited();
 
 Battle_SetMenuDialog("* The smell of smoke still&  fills the room.")
+
+battle_soul.dir = 270

@@ -1,4 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-battle_soul.move = 15//abs((battle_board._inst_frame_left.x - battle_soul.x)/10)
-battle_soul.impact = 1
+if(global.hardd = 0){
+	battle_soul.move = 15;
+	battle_soul.impact = 1;
+}
+else{
+	if(Battle_GetTurnNumber() = 3){
+		battle_soul.move = 30;
+		battle_soul.impact = 1;
+	}
+	else{
+		battle_soul.move = 15;
+		battle_soul.impact = 1;
+	}
+}

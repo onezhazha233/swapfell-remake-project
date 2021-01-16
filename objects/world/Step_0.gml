@@ -37,5 +37,5 @@ if(keyboard_check_pressed(vk_f4)&&!keyboard_check(vk_alt)&&!keyboard_check(vk_co
 }
 
 if(keyboard_check_pressed(vk_f3)){
-	game_set_speed(6,gamespeed_fps);
+	game_set_speed(10,gamespeed_fps);
 }
