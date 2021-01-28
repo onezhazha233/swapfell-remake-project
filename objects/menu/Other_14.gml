@@ -54,7 +54,7 @@ switch(string_lower(_naming_name)){
 		text="I'll allow it.";
 		break;
 	case "chara":
-		text="Even then, your journey won't be difficult.&(maybe...?)";
+		text="Nice.";
 		break;
 	case "frisk":
 		text="The true name.";

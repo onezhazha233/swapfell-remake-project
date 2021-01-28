@@ -38,6 +38,4 @@ function MakeBoneWallV() {
 	bone.duration = DURATION
 
 	return bone;
-
-
 }

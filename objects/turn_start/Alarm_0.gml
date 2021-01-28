@@ -5,3 +5,6 @@ a.text = "{voice -1}{instant 1}Ready?"
 Battle_SetTurnPreparationAutoEnd(1);
 Fade()
 battle_soul.y -= 8
+if(string_lower(Player_GetName()) = "chara"){
+	global.hardd = 1;
+}

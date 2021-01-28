@@ -258,7 +258,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			MakeBoneBottom(525,120,-4,3,0,0,1,0);
+			MakeBoneV(525,320,80,-4,0,3,0,0,1,0);
 		}
 		if(time = 259){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -391,7 +391,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			MakeBoneBottom(525,120,-4,3,0,0,1,0);
+			MakeBoneV(525,320,80,-4,0,3,0,0,1,0);
 		}
 		if(time = 457){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);

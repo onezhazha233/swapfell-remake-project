@@ -49,14 +49,14 @@ if(start = 1){
 		if(time = 30){
 			alarm[0] = 18;
 		}
-		if(time > 40&&time < 210){
-			if(instance_exists(p))p.x = 320 + sin((time-40)/15)*18;
+		if(time > 60&&time < 210){
+			if(instance_exists(p))p.x = 320 + sin((time-60)/20)*18;
 		}
 		if(time = 210){
 			alarm[0] = -1;
 			alarm[1] = -1;
 			alarm[2] = 7;
-			Anim_New(p,"x",0,0,p.x,200,10);
+			Anim_New(p,"x",0,0,p.x,200,20);
 			Battle_SetSoul(battle_soul_red);
 		}
 		if(time = 300){
