@@ -5,5 +5,5 @@ if(global.hardd = 0){
 	alarm[1] = 56;
 }
 else{
-	alarm[1] = 50;
+	alarm[1] = 48;
 }
