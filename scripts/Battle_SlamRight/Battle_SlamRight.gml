@@ -9,6 +9,4 @@ function Battle_SlamRight() {
 	battle_soul_blue.dir = 0
 	battle_enemy_papyrus.action = 2
 	battle_enemy_papyrus._action_step = 0
-
-
 }

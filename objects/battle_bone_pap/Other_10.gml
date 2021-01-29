@@ -14,7 +14,7 @@ if(color = BONE.ORANGE){
 	}
 }
 if(color = BONE.DARKBLUE){
-	if(Battle_GetTurnNumber() = 4){
+	if(Battle_GetTurnNumber() = 4||Battle_GetTurnNumber() = 8){
 		if(battle_soul.dir = 90){
 			battle_soul.dir = 270;
 		}

@@ -6,4 +6,9 @@ if!(Battle_GetTurnNumber() = 4){
 else{
 	battle_soul.move = 30;
 }
+if(Battle_GetTurnNumber() = 8){
+	if(global.hardd = 1){
+		battle_soul.move = 30;
+	}
+}
 battle_soul.impact = 1

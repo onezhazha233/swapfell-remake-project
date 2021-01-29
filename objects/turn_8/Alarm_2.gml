@@ -2,4 +2,9 @@
 // You can write your code in this editor
 MakeBoneBottom(171,54,3,0,0,0,1,0)
 MakeBoneBottom(481,54,-3,0,0,0,1,0)
-alarm[2] = 67
+if(global.hardd = 0){
+	alarm[2] = 67;
+}
+else{
+	alarm[2] = 50;
+}
