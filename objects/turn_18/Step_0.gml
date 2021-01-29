@@ -13,6 +13,6 @@ if(start = 1){
 	}
 	if(time = 620){
 		Battle_SlamUp();
-		MakeBoneWallTop(20,70,20);
+		MakeBoneWallTop(30,70,20);
 	}
 }

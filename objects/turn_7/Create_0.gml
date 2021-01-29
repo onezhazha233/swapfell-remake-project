@@ -5,3 +5,5 @@ time = 0
 
 bones = 0
 bb = 5
+
+aa = 0
