@@ -104,7 +104,7 @@ if(start = 1){
 		if(time = 400){
 			battle_enemy_papyrus.action = 0;
 			with(battle_bone_pap_wall){
-					Anim_New(id,"x",0,0,x,-280,240);
+				Anim_New(id,"x",0,0,x,-280,240);
 			}
 			Anim_New(plate,"x",0,0,plate.x,-280,240);
 			Anim_New(battle_board,"left",0,0,battle_board.left,280,240);
