@@ -6,11 +6,11 @@ if(global.hardd = 0){
 	alarm[0] = 38;
 }
 else{
-	MakeBoneTwoV(441,288,-9,20,1,0);
-	MakeBoneTwoV(200,288,9,20,1,0);
-	MakeBoneTwoV(455,288,-9,20,1,0);
-	MakeBoneTwoV(186,288,9,20,1,0);
-	MakeBoneBottom(630,90,-9,0,0,0,1,0);
-	MakeBoneBottom(11,90,9,0,0,0,1,0);
+	MakeBoneTwoV(491,288,-9,20,1,0);
+	MakeBoneTwoV(150,288,9,20,1,0);
+	MakeBoneTwoV(505,288,-9,20,1,0);
+	MakeBoneTwoV(136,288,9,20,1,0);
+	MakeBoneBottom(680,90,-9,0,0,0,0,0,200);
+	MakeBoneBottom(-39,90,9,0,0,0,0,0,200);
 	alarm[0] = 38;
 }

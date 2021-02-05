@@ -9,3 +9,5 @@ Battle_SetMenuDialog("* Papyrus got distracted.")
 if(global.hardd = 1){
 	battle_soul.dir = 270;
 }
+
+battle_enemy_papyrus.action = 0

@@ -446,6 +446,7 @@
     {"id":{"name":"BGM_GetAudio","path":"scripts/BGM_GetAudio/BGM_GetAudio.yy",},"order":7,},
     {"id":{"name":"BGM_IsPlaying","path":"scripts/BGM_IsPlaying/BGM_IsPlaying.yy",},"order":9,},
     {"id":{"name":"BGM_IsPaused","path":"scripts/BGM_IsPaused/BGM_IsPaused.yy",},"order":11,},
+    {"id":{"name":"effect_rgb","path":"objects/effect_rgb/effect_rgb.yy",},"order":27,},
     {"id":{"name":"BGM_Play","path":"scripts/BGM_Play/BGM_Play.yy",},"order":13,},
     {"id":{"name":"BGM_Pause","path":"scripts/BGM_Pause/BGM_Pause.yy",},"order":15,},
     {"id":{"name":"BGM_Resume","path":"scripts/BGM_Resume/BGM_Resume.yy",},"order":17,},
