@@ -8,3 +8,12 @@ battle_soul.y -= 8
 if(string_lower(Player_GetName()) = "chara"){
 	global.hardd = 1;
 }
+if(global.hpp = 1){
+	Player_SetName("NOHEAL");
+}
+if(global.hpp = 2){
+	Player_SetName("NOHIT");
+}
+if(global.hpp = 3){
+	Player_SetName("INFHP");
+}
