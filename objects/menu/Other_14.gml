@@ -84,10 +84,17 @@ switch(string_lower(_naming_name)){
 		text="The babybone."
 		break;
 	case "moroz":
-		text="The god.";
+		text="Cool.";
 		break;
-	case "bpants":
-		text="...i have nothing to say."
+	case "noheal":
+	case "noitem":
+		text="Good luck."
+		break;
+	case "nohit":
+		text="welcome, another challenger."
+		break;
+	case "infhp":
+		text="Hinnjaku, hinnjaku!"
 		break;
 }
 
