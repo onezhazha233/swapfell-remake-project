@@ -2,41 +2,41 @@
 // You can write your code in this editor
 if(start = 1){
 	time += 1;
-	function alartcolor(p) {
+	function alertcolor(p) {
 		switch(p){
 			case 0:
 				if(global.cooll = 1){
-					alart[0].image_angle = 0;
-					alart[0].x -= 1;
+					alert[0].image_angle = 0;
+					alert[0].x -= 1;
 				}
-				alart[1].image_angle = 180;
-				alart[1].x += 7;
-				alart[1].y += 1;
+				alert[1].image_angle = 180;
+				alert[1].x += 7;
+				alert[1].y += 1;
 				break;
 			case 1:
 				if(global.cooll = 1){
-					alart[0].image_angle = 90;
-					alart[0].x -= 1;
-					alart[0].y += 1;
+					alert[0].image_angle = 90;
+					alert[0].x -= 1;
+					alert[0].y += 1;
 				}
-				alart[1].image_angle = -90;
-				alart[1].y -= 7;
+				alert[1].image_angle = -90;
+				alert[1].y -= 7;
 				break;
 			case 2:
 				if(global.cooll = 1){
-					alart[0].image_angle = 180;
-					alart[0].y += 1;
+					alert[0].image_angle = 180;
+					alert[0].y += 1;
 				}
-				alart[1].image_angle = 0;
-				alart[1].x -= 8;
+				alert[1].image_angle = 0;
+				alert[1].x -= 8;
 				break;
 			case 3:
 				if(global.cooll = 1){
-					alart[0].image_angle = -90;
+					alert[0].image_angle = -90;
 				}
-				alart[1].image_angle = 90;
-				alart[1].y += 8;
-				alart[1].x -= 1;
+				alert[1].image_angle = 90;
+				alert[1].y += 8;
+				alert[1].x -= 1;
 				break;
 		}
 	}
@@ -141,24 +141,24 @@ if(start = 1){
 			if(b1 = 0){
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(20,196,255);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(20,196,255);
-					alart[0].alarm[0] = 39;
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(20,196,255);
+					alert[0].alarm[0] = 39;
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alart[1].alarm[0] = 39;
-				alartcolor(b1p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alert[1].alarm[0] = 39;
+				alertcolor(b1p);
 			}
 			else{
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(248,148,29);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(248,148,29);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(248,148,29);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b1p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b1p);
 			}
 		}
 		if(time = 40){
@@ -166,22 +166,22 @@ if(start = 1){
 			if(b2 = 0){
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(20,196,255);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(20,196,255);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(20,196,255);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b2p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b2p);
 			}
 			else{
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(248,148,29);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(248,148,29);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(248,148,29);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b2p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b2p);
 			}
 		}
 		if(time = 80){
@@ -189,22 +189,22 @@ if(start = 1){
 			if(b3 = 0){
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(20,196,255);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(20,196,255);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(20,196,255);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b3p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b3p);
 			}
 			else{
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(248,148,29);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(248,148,29);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(248,148,29);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b3p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b3p);
 			}
 		}
 		if(time = 120){
@@ -212,22 +212,22 @@ if(start = 1){
 			if(b4 = 0){
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(20,196,255);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(20,196,255);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(20,196,255);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b4p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b4p);
 			}
 			else{
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(248,148,29);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(248,148,29);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(248,148,29);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b4p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b4p);
 			}
 		}
 		if(time = 160){
@@ -235,22 +235,22 @@ if(start = 1){
 			if(b5 = 0){
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(20,196,255);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(20,196,255);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(20,196,255);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b5p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b5p);
 			}
 			else{
 				battle_enemy_papyrus.smoke_blend = make_color_rgb(248,148,29);
 				if(global.cooll = 1){
-					alart[0] = instance_create_depth(320,312,0,bonewall_alart);
-					alart[0].image_blend = make_color_rgb(248,148,29);
+					alert[0] = instance_create_depth(320,312,0,bonewall_alert);
+					alert[0].image_blend = make_color_rgb(248,148,29);
 				}
-				alart[1] = instance_create_depth(320,312,0,bonewall_alart);
-				alart[1].image_blend = make_color_rgb(106,96,140);
-				alartcolor(b5p);
+				alert[1] = instance_create_depth(320,312,0,bonewall_alert);
+				alert[1].image_blend = make_color_rgb(106,96,140);
+				alertcolor(b5p);
 			}
 		}
 		if(time = 185){
@@ -274,7 +274,7 @@ if(start = 1){
 					break;
 			}
 		}
-		if(time = 210){
+		if(time = 215){
 			switch(b2p){
 				case 0:
 					MakeBoneWallLeft(0,76,15,b2+1);
@@ -294,7 +294,7 @@ if(start = 1){
 					break;
 			}
 		}
-		if(time = 235){
+		if(time = 245){
 			switch(b3p){
 				case 0:
 					MakeBoneWallLeft(0,76,15,b3+1);
@@ -314,7 +314,7 @@ if(start = 1){
 					break;
 			}
 		}
-		if(time = 260){
+		if(time = 275){
 			switch(b4p){
 				case 0:
 					MakeBoneWallLeft(0,76,15,b4+1);
@@ -334,7 +334,7 @@ if(start = 1){
 					break;
 			}
 		}
-		if(time = 285){
+		if(time = 305){
 			switch(b5p){
 				case 0:
 					MakeBoneWallLeft(0,76,15,b5+1);
@@ -354,21 +354,21 @@ if(start = 1){
 					break;
 			}
 		}
-		if(time = 310){
+		if(time = 330){
 			Battle_SlamDown();
 			MakeBoneWallBottom(25,40,10);
 			MakeBoneWallTop(25,80,10);
 			MakeBoneWallLeft(25,40,10);
 			MakeBoneWallRight(25,80,10);
 		}
-		if(time = 345){
+		if(time = 365){
 			Battle_SlamUp();
 			MakeBoneWallBottom(25,80,10);
 			MakeBoneWallTop(25,40,10);
 			MakeBoneWallLeft(25,80,10);
 			MakeBoneWallRight(25,40,10);
 		}
-		if(time = 390){
+		if(time = 410){
 			battle_enemy_papyrus.action = 0;
 			audio_play_sound(snd_ding,0,0);
 			if(b6 = 0){
@@ -379,11 +379,11 @@ if(start = 1){
 			}
 			Battle_SetSoul(battle_soul_red);
 		}
-		if(time = 410){
+		if(time = 430){
 			battle_enemy_papyrus.smoke_blend = c_white;
 			MakeBoneWallBottom(0,145,15,b6+1);
 		}
-		if(time = 450){
+		if(time = 470){
 			Battle_SetSoul(battle_soul_blue);
 		}
 	}
