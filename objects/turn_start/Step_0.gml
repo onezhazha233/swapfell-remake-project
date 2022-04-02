@@ -141,7 +141,7 @@ if(start = 1){
 		}
 		if(time = 600){
 			a = instance_create_depth(410,48,0,battle_dialog_enemy);
-			a.text = "{skippable 1}{pap 0}here we go.";
+			a.text = "{skippable true}{pap 0}here we go.";
 		}
 		if(time >= 600){
 			if!(instance_exists(battle_dialog_enemy)){
@@ -351,7 +351,7 @@ if(start = 1){
 		}
 		if(time = 600+30){
 			a = instance_create_depth(410,48,0,battle_dialog_enemy);
-			a.text = "{skippable 1}{pap 0}here we go.";
+			a.text = "{skippable true}{pap 0}here we go.";
 		}
 		if(time >= 600+30){
 			if!(instance_exists(battle_dialog_enemy)){

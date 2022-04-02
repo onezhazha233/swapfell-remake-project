@@ -121,19 +121,19 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			alarm[0] = 20;
 		}
 		if(time = 61){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -146,18 +146,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 97){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -170,18 +170,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 133){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -194,18 +194,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 169){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -218,18 +218,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 205){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -242,18 +242,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 241){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -267,18 +267,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 277){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -291,18 +291,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 313){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -315,18 +315,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 349){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -339,18 +339,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 385){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -363,18 +363,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 421){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -387,19 +387,19 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			MakeBoneV(525,320,80,-4,0,3,0,0,1,0);
 		}
 		if(time = 457){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -412,18 +412,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 493){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -436,18 +436,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 529){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -460,18 +460,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 565){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -484,18 +484,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 601){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -508,18 +508,18 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 637){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
 			MakeBoneTop(512,40,-3,0,0,0,1,0);
-			plate = instance_create_depth(532,360,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,360,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 			plate = instance_create_depth(532,280,0,battle_platform);
 			plate.sticky = 1;
 			plate.move_x = -3;
@@ -532,10 +532,10 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
-			plate = instance_create_depth(532,280,0,battle_platform);
-			plate.sticky = 1;
-			plate.move_x = -3;
-			plate.width = 25;
+			//plate = instance_create_depth(532,280,0,battle_platform);
+			//plate.sticky = 1;
+			//plate.move_x = -3;
+			//plate.width = 25;
 		}
 		if(time = 700){
 			alarm[0] = -1;
