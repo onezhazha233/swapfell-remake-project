@@ -6,7 +6,7 @@ event_inherited();
 
 Battle_SetMenuDialog("* Papyrus got distracted.")
 
-if(global.hardd = 1){
+if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 1){
 	battle_soul.dir = 270;
 }
 

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(global.hardd = 0){
+if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 0){
 	MakeBoneTwoV(501,315+bones,-5,20,1,0);
 	MakeBoneTwoV(140,315+bones,5,20,1,0);
 }

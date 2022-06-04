@@ -22,49 +22,63 @@ else if(Input_CheckPressed(INPUT.UP)){
 }
 else if(Input_CheckPressed(INPUT.LEFT)){
 	if(choice = 0){
-		if(global.hardd = 0){
-			global.hardd = 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 0){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE,1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		else{
-			global.hardd = 0;
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE,0);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		event_user(2);
 	}
 	else if(choice = 1){
-		if(global.cooll = 0){
-			global.cooll = 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE) = 0){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE,1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		else{
-			global.cooll = 0;
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE,0);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		event_user(2);
 	}
 	else if(choice = 2){
-		if(global.hpp > 0)global.hpp -= 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE) > 0){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE,Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE)-1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
+		}
 		event_user(2);
 	}
 }
 else if(Input_CheckPressed(INPUT.RIGHT)){
 	if(choice = 0){
-		if(global.hardd = 0){
-			global.hardd = 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 0){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE,1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		else{
-			global.hardd = 0;
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE,0);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		event_user(2);
 	}
 	else if(choice = 1){
-		if(global.cooll = 0){
-			global.cooll = 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE) = 0){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE,1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		else{
-			global.cooll = 0;
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.COOLMODE,0);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
 		}
 		event_user(2);
 	}
 	else if(choice = 2){
-		if(global.hpp < 3)global.hpp += 1;
+		if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE) < 3){
+			Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE,Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE)+1);
+			Flag_Save(FLAG_TYPE.DYNAMIC)
+		}
 		event_user(2);
 	}
 }

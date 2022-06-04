@@ -1,0 +1,10 @@
+number = 10//骨头数量
+angle = 0
+size = 100//骨头距离原点位置
+length = 100//骨头长度
+rot = 0//旋转速度
+rott = 0//初始角度
+roting = 1//是否旋转
+color = 0//颜色
+enable = 0//是否启用，为0则可随意设置骨头位置
+alarm[0] = 1

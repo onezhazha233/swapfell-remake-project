@@ -32,7 +32,7 @@ if(start = 1){
 				break;
 		}
 	}
-	if(global.hardd = 0){
+	if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 0){
 		if(time = 1){
 			audio_play_sound(snd_ding,0,0);
 			if(b1 = 0){

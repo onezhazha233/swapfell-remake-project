@@ -51,6 +51,4 @@ function Camera_Shake() {
 	camera._shake_positive_y=true;
 
 	return true;
-
-
 }

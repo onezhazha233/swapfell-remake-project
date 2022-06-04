@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(start = 1){
 	time += 1;
-	if(global.hardd = 0){
+	if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 0){
 		if(time = 1){
 			alarm[0] = 4;
 			alarm[1] = 41;

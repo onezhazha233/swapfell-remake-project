@@ -4,6 +4,7 @@ action = 0
 switch(Battle_GetTurnNumber()){
 	case -1:
 		instance_create_depth(0,0,0,turn_start);
+		//instance_create_depth(0,0,0,turn_11);
 		break;
 	case 0:
 		instance_create_depth(0,0,0,turn_1);

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "BGM_p2",
+  "soundFile": "bgm_hypermaniac",
   "duration": 170.819687,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BGM_p2",
+  "name": "bgm_hypermaniac",
   "tags": [],
   "resourceType": "GMSound",
 }

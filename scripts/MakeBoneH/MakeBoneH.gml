@@ -38,6 +38,4 @@ function MakeBoneH() {
 	bone.duration = DURATION
 
 	return bone;
-
-
 }

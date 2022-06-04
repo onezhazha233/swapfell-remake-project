@@ -19,8 +19,9 @@ if(fader.alpha = 0){
 				}
 			}else if(Input_CheckPressed(INPUT.CONFIRM)){
 				if(_choice==0){
-					_menu=1;
-					event_user(0);
+					room_goto(room_battle);
+					//_menu=1;
+					//event_user(0);
 				}
 				if(_choice==1){
 					room_goto(room_settings);

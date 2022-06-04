@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "BGM_p1",
-  "duration": 296.468658,
+  "soundFile": "bgm_variance.mp3",
+  "duration": 240.274292,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",
   },
   "resourceVersion": "1.0",
-  "name": "BGM_p1",
+  "name": "bgm_variance",
   "tags": [],
   "resourceType": "GMSound",
 }

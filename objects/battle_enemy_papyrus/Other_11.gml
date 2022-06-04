@@ -6,28 +6,29 @@ Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION)
 battle_board.color_frame = make_color_rgb(106,96,140)
 
 if(string_lower(Player_GetName()) = "chara"){
-	global.hardd = 1;
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE,1);
+	
 }
 if(string_lower(Player_GetName()) = "noheal"){
-	global.hpp = 1;
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE,1);
 }
 if(string_lower(Player_GetName()) = "nohit"){
-	global.hpp = 2;
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE,2);
 }
 if(string_lower(Player_GetName()) = "infhp"){
-	global.hpp = 3;
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE,3);
 }
-if(global.hpp = 1){
+if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE) = 1){
 	Player_SetName("NOHEAL");
 }
-if(global.hpp = 2){
+if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE) = 2){
 	Player_SetName("NOHIT");
 }
-if(global.hpp = 3){
+if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE) = 3){
 	Player_SetName("INFHP");
 }
 
-switch(global.hpp){
+switch(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HPMODE)){
 	case 1:
 		repeat(8)Item_Remove(0);
 		Battle_SetEnemyActionNumber(_enemy_slot,1);

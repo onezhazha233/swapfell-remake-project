@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 battle_enemy_papyrus._head_image = 0
-Battle_SetTurnTime(415+global.hardd*170)
+Battle_SetTurnTime(415+Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE)*170)
 start = 1

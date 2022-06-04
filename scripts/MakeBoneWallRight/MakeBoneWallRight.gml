@@ -36,6 +36,4 @@ function MakeBoneWallRight() {
 	a.x2 = battle_board.x+battle_board.right-LENGTH;
 	a.y2 = battle_board.y+battle_board.down-2;
 	audio_play_sound(snd_exclamation,0,0);
-
-
 }

@@ -7,7 +7,7 @@ else{
 	battle_soul.move = 30;
 }
 if(Battle_GetTurnNumber() = 8){
-	if(global.hardd = 1){
+	if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 1){
 		battle_soul.move = 30;
 	}
 }

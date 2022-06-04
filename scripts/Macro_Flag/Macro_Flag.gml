@@ -44,6 +44,9 @@ function Macro_Flag() {
 
 #region dynamic
 	enum FLAG_DYNAMIC{
+		HARDMODE,
+		COOLMODE,
+		HPMODE
 	};
 #endregion
 

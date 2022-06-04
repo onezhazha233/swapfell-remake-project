@@ -36,6 +36,4 @@ function MakeBoneWallTop() {
 	a.x2 = battle_board.x+battle_board.right-2;
 	a.y2 = battle_board.y-battle_board.up;
 	audio_play_sound(snd_exclamation,0,0);
-
-
 }

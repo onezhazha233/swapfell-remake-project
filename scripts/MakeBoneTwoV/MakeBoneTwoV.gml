@@ -13,18 +13,21 @@ function MakeBoneTwoV() {
 	var DESTROY = argument[4];
 	var CONE = argument[5];
 	var DURATION = -1;
-
 	if(argument_count >= 7){
 		DURATION = argument[6];
 	}
+	bl = ds_list_create();
+	
 	if(CONE = 1||CONE = 2){
-		MakeBoneTop(X,Y-battle_board.y+battle_board.up-GAP,HSPEED,BONE.WHITE,0,0,DESTROY,1,DURATION);
-		MakeBoneBottom(X,battle_board.y+battle_board.down-GAP-Y,HSPEED,BONE.WHITE,0,0,DESTROY,2,DURATION);
+		ub = MakeBoneTop(X,Y-battle_board.y+battle_board.up-GAP,HSPEED,BONE.WHITE,0,0,DESTROY,1,DURATION);
+		db = MakeBoneBottom(X,battle_board.y+battle_board.down-GAP-Y,HSPEED,BONE.WHITE,0,0,DESTROY,2,DURATION);
 	}
 	else{
-		MakeBoneTop(X,Y-battle_board.y+battle_board.up-GAP,HSPEED,BONE.WHITE,0,0,DESTROY,0,DURATION);
-		MakeBoneBottom(X,battle_board.y+battle_board.down-GAP-Y,HSPEED,BONE.WHITE,0,0,DESTROY,0,DURATION);
+		ub = MakeBoneTop(X,Y-battle_board.y+battle_board.up-GAP,HSPEED,BONE.WHITE,0,0,DESTROY,0,DURATION);
+		db = MakeBoneBottom(X,battle_board.y+battle_board.down-GAP-Y,HSPEED,BONE.WHITE,0,0,DESTROY,0,DURATION);
 	}
-
-
+	ds_list_add(bl,ub);
+	ds_list_add(bl,db);
+	
+	return bl;
 }

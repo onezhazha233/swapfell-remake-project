@@ -51,8 +51,6 @@ Console_OutputLine("Game GUID: "+GAME_GUID);
 
 randomize()
 
-global.hardd = 0
-global.cooll = 0
-global.hpp = 0
+Flag_Load(FLAG_TYPE.DYNAMIC)
 
 room_goto_next();
