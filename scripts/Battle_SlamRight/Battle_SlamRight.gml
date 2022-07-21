@@ -5,8 +5,8 @@ function Battle_SlamRight() {
 	else{
 		thrower.alarm[3] = 12;
 	}
-	Battle_SetSoul(battle_soul_blue)
-	battle_soul_blue.dir = 0
+	Battle_SetSoul(battle_soul_blue_test)
+	battle_soul_blue_test.dir = 0
 	battle_enemy_papyrus.action = 2
 	battle_enemy_papyrus._action_step = 0
 }

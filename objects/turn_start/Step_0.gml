@@ -46,7 +46,7 @@ if(start = 1){
 		}
 		if(time = 145){
 			battle_enemy_papyrus.action = 0;
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 		}
 		if(time = 155){
 			audio_play_sound(snd_stab,0,0);
@@ -197,7 +197,7 @@ if(start = 1){
 		}
 		if(time = 145){
 			battle_enemy_papyrus.action = 0;
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 		}
 		if(time = 155){
 			audio_play_sound(snd_stab,0,0);

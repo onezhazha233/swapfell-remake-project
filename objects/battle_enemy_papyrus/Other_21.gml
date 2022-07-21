@@ -3,3 +3,4 @@
 if(instance_exists(battle_petals)){
 	instance_destroy(battle_petals);
 }
+menubonex = random_range(0,-30)

@@ -12,7 +12,7 @@ function MakeBoneWallTop() {
 	}
 
 	var ii = 0;
-	for(i=-3;i<battle_board.left+battle_board.right+14;i+=14){
+	for(i=-87;i<battle_board.left+battle_board.right+101;i+=14){
 		ii += 1;
 		b[ii] = MakeBoneWallV(battle_board.x-battle_board.left+i,battle_board.y-battle_board.up-LENGTH/2-5,LENGTH,0,0,COLOR,0,0,0,0,DURATION+PAUSE*2+10);
 		with(b[ii]){

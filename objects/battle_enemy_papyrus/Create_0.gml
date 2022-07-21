@@ -59,3 +59,4 @@ purple_eye_y = 33
 hurt = 0
 
 menubone = 0
+menubonex = 0

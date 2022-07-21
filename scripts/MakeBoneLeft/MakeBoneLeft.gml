@@ -26,5 +26,5 @@ function MakeBoneLeft() {
 
 	bone = MakeBoneH(battle_board.x-battle_board.left+LENGTH/2+5,Y,LENGTH,0,VSPEED,COLOR,OUT,ROT,DESTROY,CONE,DURATION)
 
-
+	return bone;
 }

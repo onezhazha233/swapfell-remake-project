@@ -57,7 +57,7 @@ if(start = 1){
 			MakeBoneBottom(620,120,-6,BONE.ORANGE,0,0,1,0);
 		}
 		if(time = 490){
-			battle_soul_blue.dir = 270;
+			battle_soul_blue_test.dir = 270;
 			audio_play_sound(snd_ding,0,0);
 		}
 	}
@@ -216,7 +216,7 @@ if(start = 1){
 			}
 		}
 		if(time = 490){
-			battle_soul_blue.dir = 270;
+			battle_soul_blue_test.dir = 270;
 			audio_play_sound(snd_ding,0,0);
 		}
 	}

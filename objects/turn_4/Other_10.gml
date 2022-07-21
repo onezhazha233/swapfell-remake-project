@@ -8,5 +8,5 @@ else{
 }
 a = instance_create_depth(410,48,0,battle_dialog_enemy)
 a.text = "or maybe you&have some sort&of ulterior&motive?{pause}{clear}{pap 1}i just don't&care anymore."
-Battle_SetSoul(battle_soul_blue)
+Battle_SetSoul(battle_soul_blue_test)
 Battle_SetTurnInfo(BATTLE_TURN.SOUL_Y,-9)

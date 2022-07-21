@@ -8,7 +8,7 @@ if(start = 1){
 			MakeBoneBottom(454,120,-5,1,0,0,1,0);
 		}
 		if(time = 30){
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 		}
 		if(time = 35){
 			alarm[0] = 56;
@@ -24,7 +24,7 @@ if(start = 1){
 			Anim_New(b,"x",ANIM_TWEEN.QUAD,ANIM_EASE.IN_OUT,240,670-240,60,50);
 		}
 		if(time = 30){
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 		}
 		if(time = 35){
 			alarm[0] = 56;

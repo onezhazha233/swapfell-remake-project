@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-Battle_SetTurnTime(670)
+Battle_SetTurnTime(670+Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE)*130)
 start = 1

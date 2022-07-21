@@ -14,7 +14,12 @@ if(color = BONE.DARKBLUE){
 }
 
 if(out = 0){
-	depth = DEPTH_BATTLE.BULLET;
+	if(dd = 0){
+		depth = DEPTH_BATTLE.BULLET;
+	}
+	else{
+		depth = DEPTH_BATTLE.BULLET-1;
+	}
 	surface_set_target(Battle_GetBoardSurface());{
 		draw_sprite_ext(spr_battle_bone_body_pap,0,x,y,length/2,1,angle,blend,alpha);
 		if(cone = 0){

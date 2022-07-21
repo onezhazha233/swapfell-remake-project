@@ -5,8 +5,8 @@ function Battle_SlamDown() {
 	else{
 		thrower.alarm[0] = 12;
 	}
-	Battle_SetSoul(battle_soul_blue)
-	battle_soul_blue.dir = 270
+	Battle_SetSoul(battle_soul_blue_test)
+	battle_soul_blue_test.dir = 270
 	battle_enemy_papyrus.action = 4
 	battle_enemy_papyrus._action_step = 0
 

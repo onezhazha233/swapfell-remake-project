@@ -10,12 +10,10 @@ function Battle_SetSoul() {
 			Y=battle_soul.y;
 			instance_destroy(battle_soul);
 		}
-		instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
+		ss = instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
 		audio_play_sound(snd_ding,0,0);
 		return true;
 	}else{
 		return false;
 	}
-
-
 }

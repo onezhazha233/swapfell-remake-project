@@ -14,4 +14,4 @@ battle_enemy_papyrus._wiggle = 1
 battle_enemy_papyrus.action = 0
 Battle_SetSoul(battle_soul_red)
 
-Battle_SetTurnNumber(15)
+//Battle_SetTurnNumber(19)

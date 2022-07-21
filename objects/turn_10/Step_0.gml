@@ -46,7 +46,7 @@ if(start = 1){
 			MakeBoneCone(450,369,1189,-90,-180);
 		}
 		if(time = 330){
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 			battle_enemy_papyrus._head_image = 0;
 		}
 		if(time = 480){
@@ -102,8 +102,8 @@ if(start = 1){
 		}
 		if(time = 1530){
 			Anim_New(a,"x",0,0,a.x,320-a.x,5);
-			battle_soul_blue.dir = 270;
-			battle_soul_blue.move = 6;
+			battle_soul_blue_test.dir = 270;
+			battle_soul_blue_test.move = 6;
 		}
 		if(time = 1590){
 			battle_enemy_papyrus.action = 0;
@@ -129,7 +129,7 @@ if(start = 1){
 			Fade();
 			battle_soul.x = 320;
 			battle_soul.y = 312;
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 		}
 		if(time = 1800){
 			Battle_SlamLeft();
@@ -278,7 +278,7 @@ if(start = 1){
 		}
 		
 		if(time = 165){
-			Battle_SetSoul(battle_soul_blue);
+			Battle_SetSoul(battle_soul_blue_test);
 			battle_enemy_papyrus._head_image = 0;
 			pp = instance_create_depth(420,345,0,battle_platform);
 			pp.sticky = 0;
@@ -315,30 +315,27 @@ if(start = 1){
 			Fade();
 			audio_stop_sound(snd_noise);
 			battle_enemy_papyrus._head_image = 2;
+			MakeBoneCone(battle_button_mercy.x+55-30,battle_button_mercy.y+21-80,180,-90,-90);
+			MakeBoneCone(battle_button_mercy.x+55+30,battle_button_mercy.y+21+80,180,90,90);
 		}
 		if(time = 788){
 			Fade();
 			audio_stop_sound(snd_noise);
 			battle_soul.x = 320;
-			battle_enemy_papyrus.action = 2;
-			battle_enemy_papyrus._action_step = 0;
 		}
 		if(time = 798){
-			Anim_New(battle_button_mercy,"x",0,0,battle_button_mercy.x,180,5);
 			l2.pause = 0;
 			l3.pause = 0;
 			r2.pause = 0;
 			r3.pause = 0;
 			Anim_New(ub,"y",0,0,280,-50,10);
 		}
-		if(time = 803){
-			instance_create_depth(battle_button_mercy.x+55,battle_button_mercy.y+21,0,battle_button_mercy_break_0);
-			instance_create_depth(battle_button_mercy.x+55,battle_button_mercy.y+21,0,battle_button_mercy_break_1);
-			instance_destroy(battle_button_mercy);
-		}
 		if(time = 808){
 			Anim_New(ll1,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,ll1.length,-ll1.length/2+10,20);
 			Anim_New(rr1,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,rr1.length,-rr1.length/2+10,20);
+		}
+		if(time = 820){
+			battle_button_mercy.sprite_index = Lang_GetSprite("battle.button.mercy.broken",spr_default);
 		}
 		if(time = 830){
 			ll0.color = 2;
@@ -349,11 +346,131 @@ if(start = 1){
 			rr1.hspeed = -4.5;
 			audio_play_sound(snd_stab,0,0);
 		}
+		if(time = 835){
+			battle_enemy_papyrus.action = 3;
+			battle_enemy_papyrus._action_step = 0;
+		}
 		if(time = 840){
 			lu0.pause = 0;
 			lu1.pause = 0;
 			ru0.pause = 0;
 			ru1.pause = 0;
+			db = MakeBoneV(battle_button_mercy.x+55,500,0,0,0,0,1,0,0,0,200);
+			Anim_New(db,"length",ANIM_TWEEN.QUART,ANIM_EASE.OUT,0,940,8);
+			Anim_New(db,"length",ANIM_TWEEN.QUART,ANIM_EASE.OUT,940,-940,20,60);
+			sk = instance_create_depth(0,0,0,shaker);
+			sk.target = db;
+			sk.var_name = "x";
+			sk.shake_distance = 2;
+			sk.shake_speed = 1;
+			sk.shake_random = 0;
+			sk.shake_decrease = 1;
+			sk.delay = 7;
+		}
+		if(time = 845){
+			bx[0] = battle_button_mercy.x - 41+55;
+			by[0] = battle_button_mercy.y - 14+21;
+
+			bx[1] = battle_button_mercy.x - 50+55;
+			by[1] = battle_button_mercy.y - 9+21;
+
+			bx[2] = battle_button_mercy.x - 43+55;
+			by[2] = battle_button_mercy.y + 2+21;
+
+			bx[3] = battle_button_mercy.x - 33+55;
+			by[3] = battle_button_mercy.y + 4+21;
+
+			bx[4] = battle_button_mercy.x - 15+55;
+			by[4] = battle_button_mercy.y - 14+21;
+
+			bx[5] = battle_button_mercy.x - 8+55;
+			by[5] = battle_button_mercy.y + 8+21;
+
+			bx[6] = battle_button_mercy.x - 6+55;
+			by[6] = battle_button_mercy.y + 17+21;
+
+			bx[7] = battle_button_mercy.x + 6+55;
+			by[7] = battle_button_mercy.y + 12+21;
+
+			bx[8] = battle_button_mercy.x + 8+55;
+			by[8] = battle_button_mercy.y - 8+21;
+
+			bx[9] = battle_button_mercy.x + 25+55;
+			by[9] = battle_button_mercy.y + 9+21;
+
+			bx[10] = battle_button_mercy.x + 42+55;
+			by[10] = battle_button_mercy.y - 6+21;
+
+			bx[11] = battle_button_mercy.x + 36+55;
+			by[11] = battle_button_mercy.y+21;
+
+			for(i=0;i<12;i+=1){
+			bs[i] = instance_create_depth(bx[i],by[i],0,battle_button_mercy_shard);
+			bs[i].image_index = i;
+			}
+			for(i=0;i<12;i+=1){
+				if(bs[i].x < battle_button_mercy.x+55){
+					bs[i].gravity = random_range(0.8,1);
+					bs[i].vspeed = -10;
+					bs[i].hspeed = -3;
+					if(i=1){
+						bs[i].hspeed=-1;
+						bs[i].vspeed=-18;
+					}
+					if(i=2){
+						bs[i].hspeed=-1.8;
+						bs[i].vspeed=-17;
+					}
+					if(i=0){
+						bs[i].hspeed=-2.6;
+						bs[i].vspeed=-16;
+					}
+					if(i=3){
+						bs[i].hspeed=-3.4;
+						bs[i].vspeed=-15;
+					}
+					if(i=4){
+						bs[i].hspeed=-4.2;
+						bs[i].vspeed=-14;
+					}
+					if(i=5){
+						bs[i].hspeed=-5;
+						bs[i].vspeed=-13;
+					}
+					if(i=6){
+						bs[i].hspeed=-5.8;
+						bs[i].vspeed=-12;
+					}
+					bs[i].rot = 1;
+					bs[i].rr = random_range(2,5);
+				}
+				if(bs[i].x > battle_button_mercy.x+55){
+					bs[i].gravity = random_range(0.8,1);
+					if(i=7){
+						bs[i].hspeed=1;
+						bs[i].vspeed=-18;
+					}
+					if(i=8){
+						bs[i].hspeed=1.8;
+						bs[i].vspeed=-17;
+					}
+					if(i=9){
+						bs[i].hspeed=2.6;
+						bs[i].vspeed=-16;
+					}
+					if(i=11){
+						bs[i].hspeed=3.4;
+						bs[i].vspeed=-15;
+					}
+					if(i=10){
+						bs[i].hspeed=4.2;
+						bs[i].vspeed=-14;
+					}
+					bs[i].rot = 1;
+					bs[i].rr = -random_range(2,5);
+				}
+			}
+			instance_destroy(battle_button_mercy);
 		}
 		if(time = 855){
 			pp.gravity = 0.2;
@@ -363,6 +480,7 @@ if(start = 1){
 		}
 		if(time = 878){
 			Anim_New(pg,"y",ANIM_TWEEN.QUAD,ANIM_EASE.OUT,290,355-290,20);
+			battle_enemy_papyrus.action = 0;
 		}
 		if(time = 888){
 			var ii = 0;
@@ -502,7 +620,7 @@ if(start = 1){
 		if(time = 1300){
 			Fade();
 			Battle_SlamUp();
-			MakeBoneWallTop(40,60,40);
+			MakeBoneWallTop(45,60,35);
 			MakeBoneBottom(220,120,4,0,0,0,1,0);
 			MakeBoneBottom(420,120,-4,0,0,0,1,0);
 			alarm[0] = 1;
@@ -513,6 +631,7 @@ if(start = 1){
 		}
 		if(time = 1400){
 			battle_bonecone.pause = 0;
+			with(battle_bonecone)if(y<200)blue = 1;
 			alarm[0] = -1;
 			battle_enemy_papyrus.action = 0;
 			instance_destroy(pp);
