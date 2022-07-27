@@ -6,7 +6,7 @@ if(start = 1){
 		if(time = 1){
 			alarm[0] = 1;
 		}
-		if(time = 710){
+		if(time = 750){
 			Battle_SetSoul(battle_soul_red);
 		}
 	}
@@ -14,7 +14,7 @@ if(start = 1){
 		if(time = 1){
 			alarm[0] = 1;
 		}
-		if(time = 750){
+		if(time = 710){
 			Battle_SetSoul(battle_soul_red);
 		}
 	}

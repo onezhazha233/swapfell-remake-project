@@ -132,7 +132,59 @@ if(start = 1){
 			Anim_New(rbone,"hspeed",0,0,0,-7,10);
 			alarm[3] = -1;
 		}
-		
+		if (time == 1350){
+	        a = instance_create_depth(320, 128, 0, battle_menu_fight_anim_knife)
+	        a.image_angle = 111
+	        with (battle_enemy_papyrus){
+	            alarm[4] = 4
+	            action = 3
+	            _action_step = 0
+	        }
+	    }
+	    if (time == 1400){
+	        instance_create_depth(310, 186, -250, battle_enemy_papyrus_blockwall_broken_0)
+	        instance_create_depth(311, 93, -250, battle_enemy_papyrus_blockwall_broken_1)
+	        instance_destroy(battle_enemy_papyrus_blockwall)
+	        battle_enemy_papyrus.action = 0
+	        BGM_Stop(0)
+	        battle_enemy_papyrus.hurt = 2
+	        alarm[4] = 1
+	        with (battle_enemy_papyrus){
+	            var dmg = irandom_range(2000, 3000)
+				a = instance_create_depth(310, 120, 0, battle_damage)
+	            a.damage = dmg
+	            a.bar_hp_max = 2000
+	            a.bar_hp_original = hp
+	            a.bar_hp_target = 0
+	            hp -= dmg
+	            if (hp < 0)hp = 0
+	        }
+	    }
+	    if (time == 1600)
+	    {
+	        battle_enemy_papyrus._head_image = 1
+	        a = instance_create_depth(410, 48, 0, battle_dialog_enemy)
+	        if (string_lower(Player_GetName()) == "oldtxt")
+	            a.text = "...{pause}{clear}cough i think...{sleep 20}&this is it,{sleep 20} huh?{pause}{clear}nyeh...{sleep 20}heh...{sleep 20}&heh...{pause}{clear}{pap 0}sorry,{sleep 20}&sans.{pause}{clear}look at the sky.{pause}{clear}{pap 1}what a&beautiful night..."
+	        else
+	            a.text = "seems you&finally hit me.{pause}{clear}it feels&bizarre to be&dying.{pause}{clear}{pap 0}looks i can take&some those&things.{pause}{clear}so that you’ve&gone too far.{pause}{clear}you can keep&going,{sleep 20} defeat&her...{pause}{clear}it may be the&only great thing&you will have done,{sleep 20}&heheh...{pause}{clear}{pap 3}as for me,{pap 2}i&believe we are&gonna meet here&again.{pause}{clear}maybe in a&little while,{sleep 20}&or maybe a long&time.{pause}{clear}{pap 1}it is really&anticipated how&we will meet&when you come&back."
+	    }
+	    if (time >= 1600){
+	        if (!instance_exists(battle_dialog_enemy)){
+	            if (aa == 0){
+	                a = instance_create_depth(battle_enemy.x, battle_enemy.y, 0, battle_death_particle)
+	                a.sprite = 50
+	                a.scale_x = 2
+	                a.scale_y = 2
+	                battle_enemy.visible = false
+	                audio_play_sound(snd_vaporize, 0, false)
+	                Player_SetLv(20)
+	                Player_SetHpMax(99)
+	                alarm[5] = 200
+	                aa = 1
+	            }
+	        }
+	    }
 	}
 	else{
 		if(time = 1){

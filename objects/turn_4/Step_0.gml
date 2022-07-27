@@ -36,7 +36,8 @@ if(start = 1){
 		if(time = 445){
 			alarm[2] = 30;
 			Anim_New(battle_board,"x",0,0,battle_board.x,-243,243);
-			Anim_New(plate,"x",0,0,plate.x,-243,243);
+			//Anim_New(plate,"x",0,0,plate.x,-243,243);
+			plate.move_x = -1;
 			with(battle_bone_pap_wall)Anim_New(id,"x",0,0,x,-243,243);
 		}
 		if(time >= 500){

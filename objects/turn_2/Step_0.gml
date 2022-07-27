@@ -51,7 +51,7 @@ if(start = 1){
 		}
 		if(time > 60&&time < 210){
 			if(instance_exists(p)){
-				p.move_x = 320 + sin((time-60)/20)*18 - p.xprevious;
+				p.x = 320 + sin((time-60)/20)*18;
 			}
 		}
 		if(time = 210){
