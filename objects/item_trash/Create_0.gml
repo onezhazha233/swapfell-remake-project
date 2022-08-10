@@ -1,3 +1,8 @@
 event_inherited();
 
-_name="Trash"
+if(Language() = 0){
+	_name="Trash";
+}
+else{
+	_name="垃圾";
+}

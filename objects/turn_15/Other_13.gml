@@ -4,4 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* Sins flow out.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* Sins flow out.");
+}
+else{
+	Battle_SetMenuDialog("* 罪恶喷涌而出。");
+}

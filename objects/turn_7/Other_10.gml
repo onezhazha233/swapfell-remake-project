@@ -7,6 +7,11 @@ else{
 	Battle_SetBoardSize(65,65,65,65);
 }
 a = instance_create_depth(410,48,0,battle_dialog_enemy)
-a.text = "since your&arrival,&{sleep 20}strange things&have been&happening..."
+if(Language() = 0){
+	a.text = "since your&arrival,&{sleep 20}strange things&have been&happening...";
+}
+else{
+	a.text = "自从你来了之后，&{sleep 20}就发生了一些&奇怪的事情...";
+}
 Battle_SetSoul(battle_soul_red)
 Battle_SetTurnInfo(BATTLE_TURN.SOUL_Y,-8)

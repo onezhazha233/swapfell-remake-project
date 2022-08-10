@@ -4,6 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* Rain falls.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* Rain falls.");
+}
+else{
+	Battle_SetMenuDialog("* 外边下起了雨。");
+}
 
 battle_enemy_papyrus.action = 0

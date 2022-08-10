@@ -4,8 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* Papyrus got distracted.")
-
+if(Language() = 0){
+	Battle_SetMenuDialog("* Papyrus got distracted.");
+}
+else{
+	Battle_SetMenuDialog("* 帕派瑞斯分神了。");
+}
 if(Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.HARDMODE) = 1){
 	battle_soul.dir = 270;
 }

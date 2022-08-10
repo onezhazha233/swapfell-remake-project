@@ -4,3 +4,9 @@
 ./sprite/battle_button_item_empty.ini
 ./sprite/battle_button_mercy.ini
 ./sprite/battle_button_mercy_broken.ini
+./sprite/battle_button_fight_cn.ini
+./sprite/battle_button_act_cn.ini
+./sprite/battle_button_item_cn.ini
+./sprite/battle_button_item_empty_cn.ini
+./sprite/battle_button_mercy_cn.ini
+./sprite/battle_button_mercy_broken_cn.ini

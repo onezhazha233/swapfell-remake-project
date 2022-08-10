@@ -141,7 +141,12 @@ if(start = 1){
 		}
 		if(time = 600){
 			a = instance_create_depth(410,48,0,battle_dialog_enemy);
-			a.text = "{skippable true}{pap 0}here we go.";
+			if(Language() = 0){
+				a.text = "{skippable true}{pap 0}here we go.";
+			}
+			else{
+				a.text = "{skippable true}{pap 0}我们开始吧。";
+			}
 		}
 		if(time >= 600){
 			if!(instance_exists(battle_dialog_enemy)){
@@ -351,7 +356,12 @@ if(start = 1){
 		}
 		if(time = 600+30){
 			a = instance_create_depth(410,48,0,battle_dialog_enemy);
-			a.text = "{skippable true}{pap 0}here we go.";
+			if(Language() = 0){
+				a.text = "{skippable true}{pap 0}here we go.";
+			}
+			else{
+				a.text = "{skippable true}{pap 0}我们开始吧。";
+			}
 		}
 		if(time >= 600+30){
 			if!(instance_exists(battle_dialog_enemy)){

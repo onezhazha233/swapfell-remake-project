@@ -28,7 +28,7 @@ function Flag_Custom() {
 	Item_Add(item_trash);
 	Item_Add(item_apron);
 	Item_Add(item_petals);
-	Item_Add(item_tml);
+	Item_Add(item_auther);
 	Item_Add(item_noodles);
 	Item_Add(item_piece);
 	Item_Add(item_piece);

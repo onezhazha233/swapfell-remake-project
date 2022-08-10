@@ -52,4 +52,9 @@ switch(template){
 }
 
 visible=true;
-_inst.text="{shadow false}{color_text `black`}{speed 2}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}{end}";
+if(Language() = 0){
+	_inst.text="{shadow false}{color_text `black`}{speed 2}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}{end}";
+}
+else{
+	_inst.text="{shadow false}{color_text `black`}{speed 3}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}{end}";
+}

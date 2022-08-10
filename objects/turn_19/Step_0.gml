@@ -164,11 +164,13 @@ if(start = 1){
 	    {
 	        battle_enemy_papyrus._head_image = 1
 	        a = instance_create_depth(410, 48, 0, battle_dialog_enemy)
-	        if (string_lower(Player_GetName()) == "oldtxt")
-	            a.text = "...{pause}{clear}cough i think...{sleep 20}&this is it,{sleep 20} huh?{pause}{clear}nyeh...{sleep 20}heh...{sleep 20}&heh...{pause}{clear}{pap 0}sorry,{sleep 20}&sans.{pause}{clear}look at the sky.{pause}{clear}{pap 1}what a&beautiful night..."
-	        else
-	            a.text = "seems you&finally hit me.{pause}{clear}it feels&bizarre to be&dying.{pause}{clear}{pap 0}looks i can take&some those&things.{pause}{clear}so that you’ve&gone too far.{pause}{clear}you can keep&going,{sleep 20} defeat&her...{pause}{clear}it may be the&only great thing&you will have done,{sleep 20}&heheh...{pause}{clear}{pap 3}as for me,{pap 2}i&believe we are&gonna meet here&again.{pause}{clear}maybe in a&little while,{sleep 20}&or maybe a long&time.{pause}{clear}{pap 1}it is really&anticipated how&we will meet&when you come&back."
-	    }
+			if(Language() = 0){
+				a.text = "seems you&finally hit me.{pause}{clear}it feels&bizarre to be&dying.{pause}{clear}{pap 0}looks i can take&some those&things.{pause}{clear}so that you’ve&gone too far.{pause}{clear}you can keep&going,{sleep 20} defeat&her...{pause}{clear}it may be the&only great thing&you will have done,{sleep 20}&heheh...{pause}{clear}{pap 3}as for me,{sleep 20}{pap 2}i&believe we are&gonna meet here&again.{pause}{clear}maybe in a&little while,{sleep 20}&or maybe a long&time.{pause}{clear}{pap 1}it is really&anticipated how&we will meet&when you come&back.";
+			}
+			else{
+				a.text = "看来你终于打到我了。{pause}{clear}将要死去的感觉，{sleep 20}&真是奇妙啊。{pause}{clear}{pap 0}看来我要多来点&“那个”来压一压了。{pause}{clear}那么...{sleep 20}既然你都&走到这一步了。{pause}{clear}那就继续前进，{sleep 20}&打败她吧...{pause}{clear}这可能是你在这里&做的唯一一件好事了，{sleep 20}&哈哈...{pause}{clear}{pap 3}至于我，{sleep 20}{pap 2}我相信我们&会再见的。{pause}{clear}可能就在一会之后，{sleep 20}&也可能要过很久吧。{pause}{clear}{pap 1}当你回来时，{sleep 20}我们又将&怎样地相见呢，{sleep 20}&真让人期待啊..."
+			}
+		}
 	    if (time >= 1600){
 	        if (!instance_exists(battle_dialog_enemy)){
 	            if (aa == 0){
@@ -460,7 +462,12 @@ if(start = 1){
 		if(time = 1530){
 			battle_enemy_papyrus._head_image = 1;
 			a = instance_create_depth(410,48,0,battle_dialog_enemy);
-			a.text = "...{pause}&sure enough...{sleep 20}&these things still&can't block&the knife.{pause}{clear}so, {sleep 20}seems you&finally hit me.{pause}{clear}it feels&bizarre to be&dying.{pause}{clear}{pap 0}looks i can take&some those&things.{pause}{clear}so that you’ve&gone too far.{pause}{clear}you can keep&going,{sleep 20} defeat&her...{pause}{clear}it may be the&only great thing&you will have done,{sleep 20}&heheh...{pause}{clear}{pap 3}as for me,{pap 2}i&believe we are&gonna meet here&again.{pause}{clear}maybe in a&little while,{sleep 20}&or maybe a long&time.{pause}{clear}{pap 1}it is really&anticipated how&we will meet&when you come&back.";
+			if(Language() = 0){
+				a.text = "...{pause}{clear}sure enough...{sleep 20}&these things still&can't block&the knife.{pause}{clear}so, {sleep 20}seems you&finally hit me.{pause}{clear}it feels&bizarre to be&dying.{pause}{clear}{pap 0}looks i can take&some those&things.{pause}{clear}so that you’ve&gone too far.{pause}{clear}you can keep&going,{sleep 20} defeat&her...{pause}{clear}it may be the&only great thing&you will have done,{sleep 20}&heheh...{pause}{clear}{pap 3}as for me,{pap 2}i&believe we are&gonna meet here&again.{pause}{clear}maybe in a&little while,{sleep 20}&or maybe a long&time.{pause}{clear}{pap 1}it is really&anticipated how&we will meet&when you come&back.";
+			}
+			else{
+				a.text = "...{pause}{clear}果然...{sleep 20}&这玩意还是&挡不住刀子。{pause}{clear}所以，{sleep 20}看来你终于&打到我了。{pause}{clear}将要死去的感觉，{sleep 20}&真是奇妙啊。{pause}{clear}{pap 0}看来我要多来点&“那个”来压一压了。{pause}{clear}那么...{sleep 20}既然你都&走到这一步了。{pause}{clear}那就继续前进，{sleep 20}&打败她吧...{pause}{clear}这可能是你在这里&做的唯一一件好事了，{sleep 20}&哈哈...{pause}{clear}{pap 3}至于我，{sleep 20}{pap 2}我相信我们&会再见的。{pause}{clear}可能就在一会之后，{sleep 20}&也可能要过很久吧。{pause}{clear}{pap 1}当你回来时，{sleep 20}我们又将&怎样地相见呢，{sleep 20}&真让人期待啊..."
+			}
 		}
 		if(time >= 1530){
 			if!(instance_exists(battle_dialog_enemy)){

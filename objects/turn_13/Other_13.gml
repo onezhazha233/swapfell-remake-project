@@ -4,4 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* The smoke is gone.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* The smoke is gone.");
+}
+else{
+	Battle_SetMenuDialog("* 烟味完全消散了。");
+}

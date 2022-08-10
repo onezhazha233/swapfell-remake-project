@@ -10,11 +10,20 @@ function Item_GetTextHeal() {
 	var result="";
 	result+=(LINE ? "&" : "");
 	result+="{define `HP` "+string(HEAL)+"}";
-
-	if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP)>=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX)){
-		result+=Lang_GetString("item.heal.all");
-	}else{
-		result+=Lang_GetString("item.heal.part");
+	
+	if(Language() = 0){
+		if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP)+HEAL>=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX)){
+			result+=Lang_GetString("item.heal.all");
+		}else{
+			result+=Lang_GetString("item.heal.part");
+		}
+	}
+	else{
+		if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP)+HEAL>=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX)){
+			result+="* 你的HP已满。"
+		}else{
+			result+="* 你回复了{insert HP}HP!";
+		}
 	}
 
 	return result;

@@ -1,5 +1,10 @@
 ///@desc Use
-Dialog_Add("* They're better dry.{sleep 20}&* You ate the Instant Noodles."+Item_GetTextHeal(90));
+if(Language() = 0){
+	Dialog_Add("* They're better dry.{sleep 20}"+Item_GetTextHeal(90));
+}
+else{
+	Dialog_Add("* 干吃更好。{sleep 20}"+Item_GetTextHeal(90));
+}
 Dialog_Start();
 
 Player_Heal(90);

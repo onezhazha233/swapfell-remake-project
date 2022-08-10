@@ -11,7 +11,7 @@ if(menubone = 1){
 	}
 	else{
 		if!(Battle_GetState() = BATTLE_STATE.IN_TURN||Battle_GetState() = BATTLE_STATE.TURN_PREPARATION||Battle_GetState() = BATTLE_STATE.DIALOG||Battle_GetMenu() = BATTLE_MENU.FIGHT_AIM||Battle_GetMenu() = BATTLE_MENU.FIGHT_DAMAGE||Battle_GetMenu() = BATTLE_MENU.FIGHT_ANIM){
-			a = instance_create_depth(-20+menubonex,475,0,battle_bone_menu);
+			a = instance_create_depth(-45+menubonex,475,0,battle_bone_menu);
 			a.out = 1;
 			a.angle = 90;
 		}

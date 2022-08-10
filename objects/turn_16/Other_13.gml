@@ -4,7 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* Smells like revenge.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* Smells like revenge.")
+}
+else{
+	Battle_SetMenuDialog("* 闻起来像复仇。")
+}
 
 battle_soul.restrict_inside_board = 1
 battle_enemy_papyrus.action = 0

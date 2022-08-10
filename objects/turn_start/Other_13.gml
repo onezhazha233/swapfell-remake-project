@@ -15,3 +15,10 @@ battle_enemy_papyrus.action = 0
 Battle_SetSoul(battle_soul_red)
 
 //Battle_SetTurnNumber(1)
+
+if(Language() = 0){
+	Battle_SetMenuDialog("* You ignored your sins.")
+}
+else{
+	Battle_SetMenuDialog("* 你并不在意你的罪恶。")
+}

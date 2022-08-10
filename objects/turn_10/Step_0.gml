@@ -335,7 +335,7 @@ if(start = 1){
 			Anim_New(rr1,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,rr1.length,-rr1.length/2+10,20);
 		}
 		if(time = 820){
-			battle_button_mercy.sprite_index = Lang_GetSprite("battle.button.mercy.broken",spr_default);
+			battle_button_mercy.sprite_index = (Language() = 0? Lang_GetSprite("battle.button.mercy.broken",spr_default): Lang_GetSprite("battle.button.mercy.broken.cn",spr_default));
 		}
 		if(time = 830){
 			ll0.color = 2;
@@ -405,8 +405,8 @@ if(start = 1){
 			by[11] = battle_button_mercy.y+21;
 
 			for(i=0;i<12;i+=1){
-			bs[i] = instance_create_depth(bx[i],by[i],0,battle_button_mercy_shard);
-			bs[i].image_index = i;
+				bs[i] = instance_create_depth(bx[i],by[i],0,battle_button_mercy_shard);
+				bs[i].image_index = i;
 			}
 			for(i=0;i<12;i+=1){
 				if(bs[i].x < battle_button_mercy.x+55){

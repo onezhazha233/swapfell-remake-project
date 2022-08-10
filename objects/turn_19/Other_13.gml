@@ -4,4 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* Time to end it.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* Time to end it.");
+}
+else{
+	Battle_SetMenuDialog("* 结束吧。");
+}

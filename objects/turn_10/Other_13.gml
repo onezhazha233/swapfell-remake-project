@@ -4,7 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* The real battle had finally&  begun.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* The real battle had finally&  begun.");
+}
+else{
+	Battle_SetMenuDialog("* 真正的战斗终于开始了。");
+}
 
 Battle_SetEnemyActionNumber(battle_enemy_papyrus._enemy_slot,1)
 

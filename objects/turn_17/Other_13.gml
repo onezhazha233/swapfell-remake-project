@@ -4,4 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* You stop coughing.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* You stop coughing.");
+}
+else{
+	Battle_SetMenuDialog("* 你停止了咳嗽。");
+}

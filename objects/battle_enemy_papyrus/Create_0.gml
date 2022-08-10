@@ -60,3 +60,5 @@ hurt = 0
 
 menubone = 0
 menubonex = 0
+
+rdmname = choose(0,1)

@@ -4,4 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-Battle_SetMenuDialog("* You can't ignore the pain.")
+if(Language() = 0){
+	Battle_SetMenuDialog("* You can't ignore the pain.");
+}
+else{
+	Battle_SetMenuDialog("* 你再也不能忽视痛苦了。");
+}

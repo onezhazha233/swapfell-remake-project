@@ -1,3 +1,8 @@
 event_inherited();
 
-_name="I.Noodles";
+if(Language() = 0){
+	_name="I.Noodles";
+}
+else{
+	_name="方便面";
+}

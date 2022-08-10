@@ -41,7 +41,7 @@ if(start = 1){
 		}
 		if(time = 25){
 			p = instance_create_depth(100,340,0,battle_platform);
-			p.sticky = 1;
+			p.sticky = 0;
 			p.width = 20;
 			Anim_New(p,"x",0,0,100,220,10);
 			battle_enemy_papyrus.action = 0;

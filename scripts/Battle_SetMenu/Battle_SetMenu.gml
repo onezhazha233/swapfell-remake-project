@@ -107,7 +107,12 @@ function Battle_SetMenu() {
 				}
 				proc+=1;
 			}
-			text+=Lang_GetString("battle.menu.mercy.spare");
+			if(Language() = 0){
+				text+=Lang_GetString("battle.menu.mercy.spare");
+			}
+			else{
+				text+="* 饶恕";
+			}
 		
 			//逃跑是否可用
 			if(Battle_IsMenuMercyFleeEnabled()){

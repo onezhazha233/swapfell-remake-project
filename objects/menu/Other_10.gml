@@ -3,13 +3,33 @@ if(_menu==0){
 	_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO));
 	if(_mode==0){
 		_inst_instruction=instance_create_depth(170,40,0,text_typer);
-		_inst_instruction.text=_prefix+"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 3}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[F4] - Fullscreen&When HP is 0, you lose.";
+		if(Language() = 0){
+			_inst_instruction.text=_prefix+"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 3}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[F4] - Fullscreen&When HP is 0, you lose.";
+		}
+		else{
+			_inst_instruction.text=_prefix+"{color_text `gray_light`} --- 游戏教学 ---{space_y -1}&&{space_y 3}[Z 或 ENTER] - 确认&[X 或 SHIFT] - 取消&[F4] - 全屏化&当HP为0时，你就输了。";
+		}
 		_inst_begin=instance_create_depth(170,304,0,text_typer);
-		_inst_begin.text=_prefix+"Begin Game";
+		if(Language() = 0){
+			_inst_begin.text=_prefix+"Begin Game";
+		}
+		else{
+			_inst_begin.text=_prefix+"开始游戏";
+		}
 		_inst_settings=instance_create_depth(170,344,0,text_typer);
-		_inst_settings.text=_prefix+"Settings";
+		if(Language() = 0){
+			_inst_settings.text=_prefix+"Settings";
+		}
+		else{
+			_inst_settings.text=_prefix+"游戏设置";
+		}
 		_inst_credits=instance_create_depth(170,384,0,text_typer);
-		_inst_credits.text=_prefix+"Credits";
+		if(Language() = 0){
+			_inst_credits.text=_prefix+"Credits";
+		}
+		else{
+			_inst_credits.text=_prefix+"感谢名单";
+		}
 		with(text_typer){
 			event_user(15);
 		}

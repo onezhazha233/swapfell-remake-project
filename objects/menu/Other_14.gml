@@ -31,7 +31,7 @@ switch(string_lower(_naming_name)){
 		valid=false;
 		break;
 	case "flowey":
-		text="It's not improper.";
+		text="It's not proper.";
 		valid=false;
 		break;
 	case "sans":

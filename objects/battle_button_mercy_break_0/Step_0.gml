@@ -1,5 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(Language() = 0){
+	sprite_index = spr_battle_mercy_break_0;
+	battle_button_mercy_break_1.sprite_index = spr_battle_mercy_break_1;
+}
+else{
+	sprite_index = spr_battle_mercy_break_0_cn;
+	battle_button_mercy_break_1.sprite_index = spr_battle_mercy_break_1_cn;
+}
 y -= 2
 image_alpha -= 0.05
 image_angle -= 4
