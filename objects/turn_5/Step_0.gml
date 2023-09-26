@@ -138,6 +138,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 79){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -162,6 +163,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 115){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -186,6 +188,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 151){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -210,6 +213,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 187){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -234,6 +238,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 223){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -258,6 +263,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 			MakeBoneV(525,320,80,-4,0,3,0,0,1,0);
 		}
 		if(time = 259){
@@ -283,6 +289,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 295){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -307,6 +314,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 331){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -331,6 +339,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 367){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -355,6 +364,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 403){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -379,6 +389,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 439){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -404,6 +415,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 475){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -428,6 +440,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 511){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -452,6 +465,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 547){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -476,6 +490,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 583){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -500,6 +515,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 619){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
@@ -524,6 +540,7 @@ if(start = 1){
 			plate.sticky = 1;
 			plate.move_x = -3;
 			plate.width = 25;
+			plate.angle = 180;
 		}
 		if(time = 655){
 			MakeBoneBottom(512,40,-3,0,0,0,1,0);
